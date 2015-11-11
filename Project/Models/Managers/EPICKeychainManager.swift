@@ -18,7 +18,7 @@ final class EPICKeychainManager {
     - parameter hash: a boolean value specifying if the password should be hashed before storing itself in the keychain. The hash will be a one way SHA-512 encryption, adding an extra layer of security to the keychain item. Setting this value to true is recommended, but if you will need retrieve the original representation of the password without the hash then you should set this value to false.
     - returns: a boolean indicating that the `password` parameter was successfully stored in the keychain.
     */
-    class func storePassword(password:String, forKey key:String, hash: Bool, iCloudAccessGroup: String?) -> Bool {
+    class func storePassword(password:String, forKey key:String, hash: Bool, iCloudAccessGroup: String? = nil) -> Bool {
         let password = hash ? encryptPassword(password) : password
         if checkIfKeyExists(key) {
             return updatePassword(password, forKey: key, iCloudAccessGroup: iCloudAccessGroup)
