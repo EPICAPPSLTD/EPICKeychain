@@ -9,9 +9,9 @@
 import XCTest
 
 //MARK: - constants
-let PASSWORD = "A PASSWORD STRING"
-let OTHER_PASSWORD = "ANOTHER PASSWORD STRING"
-let KEY = "A KEY"
+private let PASSWORD = "A PASSWORD STRING"
+private let OTHER_PASSWORD = "ANOTHER PASSWORD STRING"
+private let KEY = "A KEY"
 
 class EPICKeychainTests: XCTestCase {
     
