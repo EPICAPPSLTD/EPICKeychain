@@ -13,7 +13,7 @@ let password = EPICKeychainManager.passwordForKey("your key") //returns the stor
 let deleted = EPICKeychainManager.removePasswordForKey(KEY) //returns true if the key/password combination was removed or not present in the keychain
 ```
 
-This class serves as an extension to the tutorial of the blog article: ["Simplify Your Keychain Access"](http://epic-apps.uk/2016/03/06/simplify-your-keychain-access/). Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
+This class serves as an extension to the tutorial of the blog article: ["Simplify Your Keychain Access"](http://epic-apps.uk/2016/03/06/simplify-your-keychain-access/). Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](http://epic-apps.uk/contact/)! :)
 
 Copyright (c) EPIC 
 [www.epic-apps.uk](www.epic-apps.uk)
