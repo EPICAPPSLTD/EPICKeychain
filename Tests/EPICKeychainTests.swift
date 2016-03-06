@@ -19,30 +19,25 @@ class EPICKeychainTests: XCTestCase {
     func testKeychainManager() {
         XCTAssertNil(EPICKeychainManager.passwordForKey(KEY))
         
-        XCTAssertTrue(EPICKeychainManager.storePassword(PASSWORD, forKey: KEY, hash: false, iCloudAccessGroup: nil))
-        XCTAssertTrue(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: false))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: true))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: false))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: true))
+        XCTAssertTrue(EPICKeychainManager.storePassword(PASSWORD, forKey: KEY, iCloudAccessGroup: nil))
+        XCTAssertTrue(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY))
+        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY))
         XCTAssertEqual(EPICKeychainManager.passwordForKey(KEY), PASSWORD)
-        
-        XCTAssertTrue(EPICKeychainManager.storePassword(OTHER_PASSWORD, forKey: KEY, hash: true, iCloudAccessGroup: nil))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: false))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: true))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: false))
-        XCTAssertTrue(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: true))
         XCTAssertNotEqual(EPICKeychainManager.passwordForKey(KEY), OTHER_PASSWORD)
-        XCTAssertEqual(EPICKeychainManager.passwordForKey(KEY), OTHER_PASSWORD.hashUsingAlgorithm(.SHA512))
 
-        XCTAssertTrue(EPICKeychainManager.storePassword(PASSWORD, forKey: KEY, hash: true, iCloudAccessGroup: nil))
+        XCTAssertTrue(EPICKeychainManager.storePassword(OTHER_PASSWORD, forKey: KEY, iCloudAccessGroup: nil))
+        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY))
+        XCTAssertTrue(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY))
+        XCTAssertEqual(EPICKeychainManager.passwordForKey(KEY), OTHER_PASSWORD)
+        XCTAssertNotEqual(EPICKeychainManager.passwordForKey(KEY), PASSWORD)
+
+        XCTAssertTrue(EPICKeychainManager.storePassword(PASSWORD, forKey: KEY, iCloudAccessGroup: nil))
         
         XCTAssertTrue(EPICKeychainManager.removePasswordForKey(KEY))
         XCTAssertTrue(EPICKeychainManager.removePasswordForKey(KEY))
         XCTAssertNil(EPICKeychainManager.passwordForKey(KEY))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: false))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY, hash: true))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: false))
-        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY, hash: true))
+        XCTAssertFalse(EPICKeychainManager.checkPassword(PASSWORD, forKey: KEY))
+        XCTAssertFalse(EPICKeychainManager.checkPassword(OTHER_PASSWORD, forKey: KEY))
     }
 
 }

@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8F3A099D1BE17C4C00B03935 /* EPICKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099C1BE17C4C00B03935 /* EPICKeychainManager.swift */; };
-		8F3A09A01BE17CB500B03935 /* String+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099E1BE17CB500B03935 /* String+Hashing.swift */; };
-		8F3A09A11BE17CB500B03935 /* NSData+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099F1BE17CB500B03935 /* NSData+Hashing.swift */; };
 		8F3A09A51BE1821E00B03935 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A09A41BE1821E00B03935 /* Globals.swift */; };
 		8F3A09A71BE1868D00B03935 /* EPICKeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A09A61BE1868D00B03935 /* EPICKeychainTests.swift */; };
 		8F3A09A81BE1869200B03935 /* EPICKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099C1BE17C4C00B03935 /* EPICKeychainManager.swift */; };
-		8F3A09A91BE1875900B03935 /* String+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099E1BE17CB500B03935 /* String+Hashing.swift */; };
-		8F3A09AA1BE1875900B03935 /* NSData+Hashing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A099F1BE17CB500B03935 /* NSData+Hashing.swift */; };
-		8F3A09AC1BE18A9B00B03935 /* EPICKeychain.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 8F3A09AB1BE18A9B00B03935 /* EPICKeychain.entitlements */; };
 		8F8C3E091AD92CBA00CB431E /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8F8C3E081AD92CBA00CB431E /* LICENCE.txt */; };
 		8FF3A50E1AD07DD800547D53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A4ED1AD07DD800547D53 /* AppDelegate.swift */; };
 		8FF3A5111AD07DD800547D53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5011AD07DD800547D53 /* Images.xcassets */; };
@@ -36,12 +31,9 @@
 
 /* Begin PBXFileReference section */
 		8F3A099C1BE17C4C00B03935 /* EPICKeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICKeychainManager.swift; sourceTree = "<group>"; };
-		8F3A099E1BE17CB500B03935 /* String+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hashing.swift"; sourceTree = "<group>"; };
-		8F3A099F1BE17CB500B03935 /* NSData+Hashing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Hashing.swift"; sourceTree = "<group>"; };
-		8F3A09A21BE17DAA00B03935 /* EPICKeychainManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EPICKeychainManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		8F3A09A41BE1821E00B03935 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		8F3A09A61BE1868D00B03935 /* EPICKeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPICKeychainTests.swift; sourceTree = "<group>"; };
-		8F3A09AB1BE18A9B00B03935 /* EPICKeychain.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = EPICKeychain.entitlements; sourceTree = "<group>"; };
+		8F81AAA71C8C505A00C7BA20 /* EPICKeychain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = EPICKeychain.entitlements; path = ../../../EPICKeychain.entitlements; sourceTree = "<group>"; };
 		8F8C3E081AD92CBA00CB431E /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = SOURCE_ROOT; };
 		8FF3A4511AD068DD00547D53 /* EPICKeychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPICKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF3A4661AD068DD00547D53 /* EPICKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				8F3A09A41BE1821E00B03935 /* Globals.swift */,
-				8F3A09A21BE17DAA00B03935 /* EPICKeychainManager-Bridging-Header.h */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -114,21 +105,11 @@
 				8F8C3E081AD92CBA00CB431E /* LICENCE.txt */,
 				8FF3A4ED1AD07DD800547D53 /* AppDelegate.swift */,
 				8F7F211E1AD2D8C9004BBD8B /* Globals */,
-				8FF3A4F31AD07DD800547D53 /* Extensions */,
 				8FF3A4F61AD07DD800547D53 /* Models */,
 				8FF3A54F1AD0837500547D53 /* ViewControllers */,
 				8FF3A4FC1AD07DD800547D53 /* Resources */,
 			);
 			path = Project;
-			sourceTree = "<group>";
-		};
-		8FF3A4F31AD07DD800547D53 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				8F3A099E1BE17CB500B03935 /* String+Hashing.swift */,
-				8F3A099F1BE17CB500B03935 /* NSData+Hashing.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8FF3A4F61AD07DD800547D53 /* Models */ = {
@@ -161,7 +142,7 @@
 		8FF3A4FF1AD07DD800547D53 /* Entitlements */ = {
 			isa = PBXGroup;
 			children = (
-				8F3A09AB1BE18A9B00B03935 /* EPICKeychain.entitlements */,
+				8F81AAA71C8C505A00C7BA20 /* EPICKeychain.entitlements */,
 			);
 			path = Entitlements;
 			sourceTree = "<group>";
@@ -281,7 +262,6 @@
 				8F8C3E091AD92CBA00CB431E /* LICENCE.txt in Resources */,
 				8FF3A5131AD07DD800547D53 /* LaunchScreen.xib in Resources */,
 				8FF3A5111AD07DD800547D53 /* Images.xcassets in Resources */,
-				8F3A09AC1BE18A9B00B03935 /* EPICKeychain.entitlements in Resources */,
 				8FF3A5141AD07DD800547D53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,10 +282,8 @@
 			files = (
 				8F3A099D1BE17C4C00B03935 /* EPICKeychainManager.swift in Sources */,
 				8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */,
-				8F3A09A01BE17CB500B03935 /* String+Hashing.swift in Sources */,
 				8FF3A50E1AD07DD800547D53 /* AppDelegate.swift in Sources */,
 				8F3A09A51BE1821E00B03935 /* Globals.swift in Sources */,
-				8F3A09A11BE17CB500B03935 /* NSData+Hashing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,10 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3A09A91BE1875900B03935 /* String+Hashing.swift in Sources */,
 				8F3A09A81BE1869200B03935 /* EPICKeychainManager.swift in Sources */,
 				8F3A09A71BE1868D00B03935 /* EPICKeychainTests.swift in Sources */,
-				8F3A09AA1BE1875900B03935 /* NSData+Hashing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +351,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychain;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = AdHoc;
@@ -389,7 +364,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychainTests;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 			};
 			name = AdHoc;
 		};
@@ -480,7 +454,6 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychain;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -494,7 +467,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychain;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -513,7 +485,6 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychainTests;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -527,7 +498,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICKeychainTests;
-				SWIFT_OBJC_BRIDGING_HEADER = "Project/Globals/EPICKeychainManager-Bridging-Header.h";
 			};
 			name = Release;
 		};
